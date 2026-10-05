@@ -1,1 +1,131 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2e9ff;
+}
+
+
+.logo {
+    background-color: white;
+
+    height: 70px;
+
+    display: grid;
+    place-items: center;
+
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.navigation {
+    height: 70px;
+
+    background-color: white;
+
+    display: grid;
+    align-items: center;
+    justify-content: end;
+
+    padding-right: 30px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+.nav a {
+    color: #222;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.nav a:hover {
+    color: #235455;
+}
+
+.main {
+    width: auto;
+    height: 670px;
+    position: relative;
+   
+    background-image: url("../img/HomePage(2).jpg");
+    
+    background-size: cover;
+
+
+    display: grid;
+    place-items: center;
+}
+
+.main h1 {
+   position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    top: 70%;
+}
+
+.content {
+    width: 80%;
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.content-row {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 5px;
+
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-text {
+    background-color: white;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content-text h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
