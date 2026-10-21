@@ -11,8 +11,7 @@ body {
 
 
 .logo {
-    background-color: white;
-
+    background-color: transparent;
     height: 70px;
 
     display: grid;
@@ -21,6 +20,7 @@ body {
     position: absolute;
     left: 20px;
     top: 0;
+    z-index: 10;
 }
 
 .logo img {
@@ -31,14 +31,21 @@ body {
 
 .navigation {
     height: 70px;
+    width: 100%;
 
-    background-color: white;
+    position: absolute;
+
+    background-color: transparent;
 
     display: grid;
     align-items: center;
     justify-content: end;
 
     padding-right: 30px;
+
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .nav {
@@ -51,10 +58,10 @@ body {
 }
 
 .nav a {
-    color: #222;
+    color: white;
     text-decoration: none;
 
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 13px;
 }
 
@@ -66,12 +73,12 @@ body {
     width: auto;
     height: 670px;
     position: relative;
-   
-    background-image: url("../img/HomePage(2).jpg");
+   margin-top: 0;
+    background-image: url("../img/HomePage\ by\ me.jpg");
     
     background-size: cover;
 
-
+    
     display: grid;
     place-items: center;
 }
@@ -96,11 +103,13 @@ body {
     grid-template-columns: 35% 65%;
     gap: 5px;
 
-    height: 180px;
+    height: 200px;
     margin-bottom: 10px;
 }
 
-
+.content-image {
+    margin: 0;
+}
 
 .content-image img {
     width: 100%;
@@ -128,4 +137,13 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     line-height: 1.6;
+}
+
+article.contactform {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    border: #222;
+    border-radius :0%;
+    padding: 5px;
 }
