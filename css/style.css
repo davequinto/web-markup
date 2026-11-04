@@ -60,6 +60,13 @@ body {
     z-index: 5;
 }
 
+header.no2{
+    
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
 .navigation2 {
     height: 80px;
     width: 100%;
@@ -95,7 +102,7 @@ body {
     font-family: 'Inter', sans-serif;
     
 
-    font-size: 15px;
+    font-size: 1rem;
 
     padding: 8px 8px;
     border-radius: 8px;
@@ -108,7 +115,7 @@ body {
     font-family: 'Inter', sans-serif;
     
 
-    font-size: 15px;
+    font-size: 1rem;
     color: white;
 }
 
@@ -118,7 +125,7 @@ body {
     font-family: 'Inter', sans-serif;
     
 
-    font-size: 15px;
+    font-size: 1rem;
     color: #3D4435;
 }
 
@@ -191,8 +198,8 @@ body {
 
 .content-text h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 1em;
     color: white;
 }
 
@@ -225,7 +232,7 @@ article.contactform {
     text-align: center;
     justify-items: center;
 
-    margin-bottom: 80px;
+    margin-bottom: 5em;
 }
 
 .quote p {
@@ -298,7 +305,7 @@ article.contactform {
 
     color: white;
 
-    margin-bottom: 30px;
+    margin-bottom: 2em;
     white-space: nowrap;
     justify-items: center;
 }
@@ -310,7 +317,7 @@ article.contactform {
     font-weight: 400;
     color: white;
 
-    margin-bottom: 14px;
+    margin-bottom: 1em;
 }
 
 /*2ndpage */
@@ -321,7 +328,7 @@ article.contactform {
     background-color: #F2EDDC;
 
     padding: 40px 0 20px;
-    margin-bottom: 80px;
+    margin-bottom: 4em;
 }
 
 
@@ -371,7 +378,7 @@ article.contactform {
     max-width: 1200px;
 
     margin: 10px auto 60px;
-
+    margin-bottom: 2em;
     display: grid;
     grid-template-columns: 1fr 260px;
     grid-template-rows: auto 1fr;
@@ -393,7 +400,7 @@ article.contactform {
     
 
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 .song-list {
@@ -459,7 +466,7 @@ article.contactform {
     font-size: 24px;
     font-weight: 500;
 
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .song-text h3 {
@@ -471,7 +478,7 @@ article.contactform {
 }
 
 .chords {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .chords p {
@@ -487,7 +494,7 @@ article.contactform {
     font-size: 16px;
 
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .song-part {
@@ -554,7 +561,7 @@ article.contactform {
     color: white;
     text-align: center;
 
-    margin-bottom: 22px;
+    margin-bottom: 2em;
 }
 
 .tips-intro {
@@ -620,7 +627,7 @@ article.contactform {
 
     color: black;
 
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 .tip-row p {
@@ -630,13 +637,13 @@ article.contactform {
 
     color: black;
 
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .tip-image {
     width: 100%;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
 }
 
 .tip-image img {
@@ -732,7 +739,7 @@ article.contactform {
     font-family: 'Inter', sans-serif;
     
 
-    font-size: 15px;
+    font-size: 1rem;
 
     padding: 8px 8px;
     border-radius: 8px;
@@ -832,6 +839,11 @@ article.contactform {
     flex-direction: column;
 }
 
+legend{
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'inter', sans-serif;
+}
 .contact-form label {
     font-size: 16px;
     margin-bottom: 5px;
@@ -963,6 +975,19 @@ article.contactform {
 .social-links a:hover {
     background-color: #606958;
 }
+
+figcaption.page1{
+    font-size:14px;
+    font-family: 'Inter', sans-serif;
+    color:white;
+}
+
+figcaption.page2 {
+    font-size:14px;
+    font-family: 'Inter', sans-serif;
+    color:black;
+}
+
 
 
 
