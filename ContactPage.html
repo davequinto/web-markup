@@ -1,48 +1,141 @@
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Easy Guitar</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
-<body>
 
-    <nav class="logo">
-        <a href="index.html">
-            <img src="img/Your-Logo-Here-Black-500x500.jpg" alt="Logo">
-        </a>
-    </nav>
+    <body class="contact-page">
 
-    <nav class="navigation">
-        <ul class="nav">
-            <li><a href="AcousticOrElectric.html">Acoustic or electric</a></li>
-            <li><a href="BeginnerSongs.html">Easy Songs</a></li>
-            <li><a href="Tips.html">Tips</a></li>
-            <li><a href="SetupMyGuitar.html">Setup My Guitar</a></li>
-            <li><a href="ContactPage.html">Contact</a></li>
-        </ul>
-    </nav>
-    <form action="http://next-app-router-playground-kohl.vercel.app/api/contact" method="POST">    
-        <article class="contactform">
-            <label for="name">Enter your name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-            <label for="email">Enter your email:</email>
-            <input type="email" id="email" name="email" placeholder="Example@email.com" required/>
+    <header class="contact-hero">
+
+        <nav class="logo">
+            <a href="index.html">
+                <img src="img/Logo Webdesign (White).png" alt="Logo">
+            </a>
+        </nav>
+
+        <nav class="navigation">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AcousticOrElectric.html">Acoustic or Electric</a></li>
+                <li><a href="BeginnerSongs.html">Easy Songs</a></li>
+                <li><a href="Tips.html">Tips</a></li>
+                <li><a href="SetupMyGuitar.html">Guitar Setup</a></li>
+                <li><a href="ContactPage.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="contact-heading">
+            <h1>Contact Us</h1>
+
+            <p>
+                We would like to hear from you! Have questions about </p>
+               
+                 <p> guitar? Need help getting started?</p>
             
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message"> 
-            </textarea>
+                <p> Send us a message!</p>
+            
+        </section>
+
+    </header>
+
+
+    <main class="contact-content">
+
+        <form class="contact-form"
+              action="http://next-app-router-playground-kohl.vercel.app/api/contact"
+              method="POST">
+
+            <fieldset class="name-fields">
+
+                <section>
+                    <label for="first-name">First Name:</label>
+                    <input type="name" id="first-name"
+                           name="first-name" required>
+                </section>
+
+                <section>
+                    <label for="last-name">Last Name:</label>
+                    <input type="name" id="last-name"
+                           name="last-name" required>
+                </section>
+
+            </fieldset>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email"
+                   name="email" required>
+
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message"
+                      rows="6" required></textarea>
+
+
             <input type="submit" value="Submit">
-        </article>
-    </form>
 
-       
-        
+        </form>
 
 
+        <aside class="contact-information">
+
+            <article class="contact-detail">
+
+                <span class="contact-icon">&#9993;</span>
+
+                <section>
+                    <h3>Email us</h3>
+                    <p>Email@email.com</p>
+                </section>
+
+            </article>
 
 
-    </article>
+            <article class="contact-detail">
+
+                <span class="contact-icon">&#9742;</span>
+
+                <section>
+                    <h3>Call us</h3>
+                    <p>(+63)123 456 789</p>
+                </section>
+
+            </article>
+
+
+            <section class="social-links">
+
+                <h2>Follow us</h2>
+
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">◎</a>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+
+
+
+</body>
+
+    <footer class="footer">
+        <p>© 2026 Easy Guitar | Learn The Guitar The Easy Way</p>
+    </footer>
+</html>
+
