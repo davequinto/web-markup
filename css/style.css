@@ -100,7 +100,7 @@ header.no2{
     text-decoration: none;
 
     font-family: 'Inter', sans-serif;
-    
+    text-transform: uppercase;
 
     font-size: 1rem;
 
@@ -177,12 +177,14 @@ header.no2{
 
 .content-image {
     margin: 0;
+   
 }
 
 .content-image img {
     width: 222px;
     height: 222px;
     object-fit: cover;
+    float: right;
 }
 
 .content-text {
@@ -208,6 +210,7 @@ header.no2{
     font-size: 14px;
     line-height: 1.6;
     color: white;
+    text-indent: 15px;
 }
 
 article.contactform {
@@ -365,7 +368,7 @@ article.contactform {
 
 .guitar-recommendations .content-text p {
     color: black;
-
+    text-indent: 15px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -540,7 +543,11 @@ article.contactform {
 
 
 
-.song-aside tbody  {
+.song-aside tbody tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+.song-aside tbody tr:nth-child(odd) {
     background-color: #FFF;
 }
 
@@ -561,7 +568,7 @@ article.contactform {
     color: white;
     text-align: center;
 
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .tips-intro {
@@ -588,6 +595,10 @@ article.contactform {
 
     object-fit: cover;
     display: block;
+}
+.tip-row p::first-letter {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .tips-intro-text {
@@ -644,6 +655,7 @@ article.contactform {
     width: 100%;
     margin: 0;
     margin-bottom: 2em;
+    
 }
 
 .tip-image img {
@@ -737,7 +749,7 @@ article.contactform {
     text-decoration: none;
 
     font-family: 'Inter', sans-serif;
-    
+    text-transform: uppercase;
 
     font-size: 1rem;
 
@@ -752,7 +764,7 @@ article.contactform {
     font-family: 'Inter', sans-serif;
     
 
-    font-size: 15px;
+    font-size: 1rem;
     color: white;
 }
 
@@ -921,7 +933,7 @@ legend{
     text-align: center;
 }
 
-.contact-detail h3 {
+.contact-detail h2 {
     font-size: 16px;
     font-weight: 700;
 
@@ -988,6 +1000,319 @@ figcaption.page2 {
     color:black;
 }
 
+
+.cookie-message {
+    position: fixed;
+    bottom: 50%;
+    justify-self: center;
+    width: 25%;
+    background-color: #5d6c67;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 9999;
+    font-family: 'Inter', sans-serif;
+    font-size:2rem;
+}
+
+.cookie-message button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+   
+    .logo {
+        height: 60px;
+        left: 5px;
+    }
+
+    .logo img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .navigation {
+        height: auto;
+        min-height: 80px;
+        padding: 10px 5px 10px 75px;
+    }
+
+    .nav {
+        grid-template-columns: repeat(3, auto);
+        gap: 8px;
+    }
+
+    .nav a {
+        font-size: 0.75rem;
+        padding: 6px 5px;
+        text-align: center;
+    }
+
+   
+    .main {
+        height: 500px;
+        background-position: center;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+        top: 65%;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+   
+    .content {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .content-row {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 10px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .content-image img {
+        width: 100%;
+        max-width: 280px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .content-text {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .content-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5em;
+    }
+
+    .content-text p {
+        font-size: 0.9rem;
+        
+    }
+
+   
+    .quote {
+        padding: 25px 20px;
+        margin-bottom: 3em;
+    }
+
+    .quote p {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .navigation2 {
+        height: auto;
+        min-height: 80px;
+        padding: 10px 5px 10px 75px;
+    }
+
+    .navigation2 .nav {
+        grid-template-columns: repeat(3, auto);
+        gap: 8px;
+    }
+
+    .navigation2 .nav a {
+        font-size: 0.75rem;
+        padding: 6px 5px;
+        text-align: center;
+    }
+
+    .guitar-choice {
+        width: 90%;
+        margin: 30px auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .guitar-choice figure {
+        width: auto;
+    }
+
+    .guitar-choice figure img {
+        width: 100%;
+        height: 500px;
+        object-fit: contain;
+        transform: rotate(90deg);
+    }
+
+    .guitar-choice-text {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .guitar-choice-text h1 {
+        font-size: 2rem;
+        white-space: normal;
+        margin-bottom: 1em;
+    }
+
+    .guitar-choice-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1em;
+    }
+
+    .guitar-recommendations {
+        padding: 30px 0;
+        margin-bottom: 2em;
+    }
+
+    .guitar-recommendations .content-row {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        height: auto;
+        margin: 0 auto 35px;
+        text-align: center;
+    }
+
+    .guitar-recommendations .content-image img {
+        width: 100%;
+        max-width: 280px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .guitar-recommendations .content-text {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .guitar-recommendations .content-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .easy-songs {
+        width: 92%;
+        margin: 25px auto 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 0;
+    }
+
+    .easy-songs > h1 {
+        grid-column: 1;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .song-list {
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
+    }
+
+    .song-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .song-image {
+        width: 100%;
+        text-align: center;
+        
+        justify-items: center;
+    }
+
+    .song-image img {
+        width: 100%;
+        max-width: 280px;
+        height: 220px;
+        object-fit: cover;
+        
+    }
+
+    .song-image figcaption {
+        font-size: 0.8rem;
+    }
+
+    .song-text {
+        width: 100%;
+        min-width: 0;
+        padding: 18px 15px;
+        overflow-wrap: break-word;
+    }
+
+    .song-text h2 {
+        font-size: 1.25rem;
+    }
+
+    .song-text h3 {
+        font-size: 1rem;
+    }
+
+    .chords p,
+    .song-part p,
+    .capo {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .song-aside {
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+
+    .song-aside table {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .song-aside th,
+    .song-aside td {
+        padding: 8px 6px;
+    }
+
+    .contact-heading h1 {
+        font-size: 2rem;
+    }
+
+    .contact-heading p {
+        font-size: 0.9rem;
+    }
+
+    .contact-hero .navigation {
+        height: auto;
+        min-height: 80px;
+        padding: 10px 5px 10px 75px;
+    }
+
+    .contact-hero .nav {
+        grid-template-columns: repeat(3, auto);
+        gap: 8px;
+    }
+
+    .contact-hero .nav a {
+        font-size: 0.75rem;
+        padding: 6px 5px;
+        text-align: center;
+    }
+}
 
 
 
